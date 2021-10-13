@@ -1,0 +1,6 @@
+framework module Pods_Cryptoneat_CryptoneatUITests {
+  umbrella header "Pods-Cryptoneat-CryptoneatUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
