@@ -3,19 +3,62 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F6B14EC0DD18403682CFC40 /* Pods_Cryptoneat_CryptoneatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0ED2B26678F0E6081EBAA3 /* Pods_Cryptoneat_CryptoneatUITests.framework */; };
+		B904964826F81C9A00F7F8B1 /* MarketChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B904964726F81C9A00F7F8B1 /* MarketChartViewController.swift */; };
+		B904964D26F9802B00F7F8B1 /* AllTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B904964C26F9802B00F7F8B1 /* AllTimeView.swift */; };
+		B9064D912701AEC3000E3894 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9064D902701AEC3000E3894 /* FavoritesViewModel.swift */; };
+		B9064D962701B38D000E3894 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9064D952701B38D000E3894 /* EmptyStateView.swift */; };
+		B9064D9C270302BB000E3894 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9064D9B270302BB000E3894 /* HomeViewController.swift */; };
+		B910006C26E4983500F63163 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B910006B26E4983500F63163 /* API.swift */; };
+		B910007326E4996300F63163 /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B910007226E4996300F63163 /* APITests.swift */; };
+		B910007C26E49B5F00F63163 /* MarketsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B910007B26E49B5F00F63163 /* MarketsService.swift */; };
+		B910009426E4A32900F63163 /* JSONDecoder+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B910009326E4A32900F63163 /* JSONDecoder+Ext.swift */; };
+		B910009C26E4A36400F63163 /* Formatter+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B910009B26E4A36400F63163 /* Formatter+Ext.swift */; };
+		B91000A126E4A37B00F63163 /* JSONEncoder+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91000A026E4A37B00F63163 /* JSONEncoder+Ext.swift */; };
+		B91000A626E4A3CE00F63163 /* ISO8601DateFormatter+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91000A526E4A3CE00F63163 /* ISO8601DateFormatter+Ext.swift */; };
+		B91000B426E4A3F400F63163 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91000B326E4A3F400F63163 /* Date+Ext.swift */; };
+		B91000B926E4A40200F63163 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91000B826E4A40200F63163 /* String+Ext.swift */; };
+		B91000BF26E4B81200F63163 /* MarketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91000BE26E4B81200F63163 /* MarketCell.swift */; };
+		B946F07A26F2E3E900E5690F /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = B946F07926F2E3E900E5690F /* Market.swift */; };
+		B946F07F26F2EF1300E5690F /* MarketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B946F07E26F2EF1300E5690F /* MarketViewModel.swift */; };
+		B946F08A26F315A000E5690F /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B946F08926F315A000E5690F /* MarketViewController.swift */; };
+		B946F08F26F31B6B00E5690F /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = B946F08E26F31B6B00E5690F /* Currency.swift */; };
+		B946F09426F3232700E5690F /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B946F09326F3232700E5690F /* UIView+Ext.swift */; };
+		B946F09E26F8117900E5690F /* MarketChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B946F09D26F8117900E5690F /* MarketChart.swift */; };
+		B950400B270D8971000722FA /* BitcoinPriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B950400A270D8971000722FA /* BitcoinPriceViewController.swift */; };
+		B9504010270D89ED000722FA /* BitcoinPriceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B950400F270D89ED000722FA /* BitcoinPriceViewModel.swift */; };
+		B9504015270D90C0000722FA /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9504014270D90C0000722FA /* Double+Ext.swift */; };
+		B950401A270D97F4000722FA /* Trending.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9504019270D97F4000722FA /* Trending.swift */; };
+		B9504020270DA036000722FA /* TrendingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B950401F270DA036000722FA /* TrendingViewModel.swift */; };
+		B9504025270DA044000722FA /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9504024270DA044000722FA /* TrendingViewController.swift */; };
+		B9632E37270E9A6500342460 /* GainersAndLosersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9632E36270E9A6500342460 /* GainersAndLosersViewController.swift */; };
+		B9632E3F270E9A7200342460 /* GainersAndLosersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9632E3E270E9A7200342460 /* GainersAndLosersViewModel.swift */; };
+		B9632E44270FFB4300342460 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9632E43270FFB4300342460 /* UITableView+Ext.swift */; };
+		B9632E49271000E800342460 /* ContentSizedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9632E48271000E800342460 /* ContentSizedTableView.swift */; };
+		B9632E4E2710018100342460 /* GainersLosersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9632E4D2710018100342460 /* GainersLosersCell.swift */; };
+		B9632E53271686A900342460 /* TrendingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9632E52271686A900342460 /* TrendingCell.swift */; };
+		B992301926E48BB800F395E8 /* MarketListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B992301826E48BB800F395E8 /* MarketListViewController.swift */; };
+		B992302426E48BF900F395E8 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B992302326E48BF900F395E8 /* FavoritesViewController.swift */; };
+		B992302A26E490B400F395E8 /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B992302926E490B400F395E8 /* Themes.swift */; };
+		B992303226E491B000F395E8 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B992303126E491B000F395E8 /* Colors.swift */; };
+		B999711D26FD554600F44A04 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B999711C26FD554600F44A04 /* LoadingViewController.swift */; };
+		B999712226FD579B00F44A04 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B999712126FD579B00F44A04 /* ViewState.swift */; };
+		B999712726FD875C00F44A04 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B999712626FD875C00F44A04 /* LoadingView.swift */; };
 		B9B9F3FE26E48A9A00D443F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B9F3FD26E48A9A00D443F4 /* AppDelegate.swift */; };
 		B9B9F40026E48A9A00D443F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B9F3FF26E48A9A00D443F4 /* SceneDelegate.swift */; };
-		B9B9F40226E48A9A00D443F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B9F40126E48A9A00D443F4 /* ViewController.swift */; };
-		B9B9F40526E48A9A00D443F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9B9F40326E48A9A00D443F4 /* Main.storyboard */; };
 		B9B9F40826E48A9A00D443F4 /* Cryptoneat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B9B9F40626E48A9A00D443F4 /* Cryptoneat.xcdatamodeld */; };
 		B9B9F40A26E48A9B00D443F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9B9F40926E48A9B00D443F4 /* Assets.xcassets */; };
 		B9B9F40D26E48A9B00D443F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9B9F40B26E48A9B00D443F4 /* LaunchScreen.storyboard */; };
 		B9B9F41826E48A9B00D443F4 /* CryptoneatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B9F41726E48A9B00D443F4 /* CryptoneatTests.swift */; };
 		B9B9F42326E48A9B00D443F4 /* CryptoneatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B9F42226E48A9B00D443F4 /* CryptoneatUITests.swift */; };
+		B9F69D4926F9D3BD000924D8 /* MarketInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F69D4826F9D3BD000924D8 /* MarketInformationView.swift */; };
+		B9F69D4F26F9DDDC000924D8 /* MarketViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F69D4E26F9DDDC000924D8 /* MarketViewModelTests.swift */; };
+		BAE5019E35913BF107C139B1 /* Pods_Cryptoneat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76625C8181C63173ADA7CA4A /* Pods_Cryptoneat.framework */; };
+		CE1D76E22CB3CF0E391768C3 /* Pods_CryptoneatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C5309F686F49426A104527 /* Pods_CryptoneatTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +79,56 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CD3F1D4C5C47F20B744D96F /* Pods-Cryptoneat-CryptoneatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cryptoneat-CryptoneatUITests.debug.xcconfig"; path = "Target Support Files/Pods-Cryptoneat-CryptoneatUITests/Pods-Cryptoneat-CryptoneatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4BA2D83F0BEE4D0F643D3C6A /* Pods-Cryptoneat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cryptoneat.debug.xcconfig"; path = "Target Support Files/Pods-Cryptoneat/Pods-Cryptoneat.debug.xcconfig"; sourceTree = "<group>"; };
+		54C5309F686F49426A104527 /* Pods_CryptoneatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoneatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75606E66E76053C612607F0F /* Pods-CryptoneatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoneatTests.release.xcconfig"; path = "Target Support Files/Pods-CryptoneatTests/Pods-CryptoneatTests.release.xcconfig"; sourceTree = "<group>"; };
+		76625C8181C63173ADA7CA4A /* Pods_Cryptoneat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cryptoneat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C0ED2B26678F0E6081EBAA3 /* Pods_Cryptoneat_CryptoneatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cryptoneat_CryptoneatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9F69913FF2EB42D9AF1539B /* Pods-CryptoneatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoneatTests.debug.xcconfig"; path = "Target Support Files/Pods-CryptoneatTests/Pods-CryptoneatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B904964726F81C9A00F7F8B1 /* MarketChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketChartViewController.swift; sourceTree = "<group>"; };
+		B904964C26F9802B00F7F8B1 /* AllTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTimeView.swift; sourceTree = "<group>"; };
+		B9064D902701AEC3000E3894 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
+		B9064D952701B38D000E3894 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		B9064D9B270302BB000E3894 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B910006B26E4983500F63163 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		B910007226E4996300F63163 /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
+		B910007B26E49B5F00F63163 /* MarketsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketsService.swift; sourceTree = "<group>"; };
+		B910009326E4A32900F63163 /* JSONDecoder+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Ext.swift"; sourceTree = "<group>"; };
+		B910009B26E4A36400F63163 /* Formatter+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Formatter+Ext.swift"; sourceTree = "<group>"; };
+		B91000A026E4A37B00F63163 /* JSONEncoder+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONEncoder+Ext.swift"; sourceTree = "<group>"; };
+		B91000A526E4A3CE00F63163 /* ISO8601DateFormatter+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ISO8601DateFormatter+Ext.swift"; sourceTree = "<group>"; };
+		B91000B326E4A3F400F63163 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		B91000B826E4A40200F63163 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		B91000BE26E4B81200F63163 /* MarketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketCell.swift; sourceTree = "<group>"; };
+		B946F07926F2E3E900E5690F /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
+		B946F07E26F2EF1300E5690F /* MarketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewModel.swift; sourceTree = "<group>"; };
+		B946F08926F315A000E5690F /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
+		B946F08E26F31B6B00E5690F /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		B946F09326F3232700E5690F /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		B946F09D26F8117900E5690F /* MarketChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketChart.swift; sourceTree = "<group>"; };
+		B950400A270D8971000722FA /* BitcoinPriceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinPriceViewController.swift; sourceTree = "<group>"; };
+		B950400F270D89ED000722FA /* BitcoinPriceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinPriceViewModel.swift; sourceTree = "<group>"; };
+		B9504014270D90C0000722FA /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
+		B9504019270D97F4000722FA /* Trending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trending.swift; sourceTree = "<group>"; };
+		B950401F270DA036000722FA /* TrendingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewModel.swift; sourceTree = "<group>"; };
+		B9504024270DA044000722FA /* TrendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
+		B9632E36270E9A6500342460 /* GainersAndLosersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GainersAndLosersViewController.swift; sourceTree = "<group>"; };
+		B9632E3E270E9A7200342460 /* GainersAndLosersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GainersAndLosersViewModel.swift; sourceTree = "<group>"; };
+		B9632E43270FFB4300342460 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		B9632E48271000E800342460 /* ContentSizedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSizedTableView.swift; sourceTree = "<group>"; };
+		B9632E4D2710018100342460 /* GainersLosersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GainersLosersCell.swift; sourceTree = "<group>"; };
+		B9632E52271686A900342460 /* TrendingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingCell.swift; sourceTree = "<group>"; };
+		B992301826E48BB800F395E8 /* MarketListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketListViewController.swift; sourceTree = "<group>"; };
+		B992302326E48BF900F395E8 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		B992302926E490B400F395E8 /* Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
+		B992303126E491B000F395E8 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		B999711C26FD554600F44A04 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		B999712126FD579B00F44A04 /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		B999712626FD875C00F44A04 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		B9B9F3FA26E48A9A00D443F4 /* Cryptoneat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cryptoneat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B9F3FD26E48A9A00D443F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9B9F3FF26E48A9A00D443F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B9B9F40126E48A9A00D443F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B9B9F40426E48A9A00D443F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B9B9F40726E48A9A00D443F4 /* Cryptoneat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cryptoneat.xcdatamodel; sourceTree = "<group>"; };
 		B9B9F40926E48A9B00D443F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9B9F40C26E48A9B00D443F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +139,10 @@
 		B9B9F41E26E48A9B00D443F4 /* CryptoneatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoneatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B9F42226E48A9B00D443F4 /* CryptoneatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoneatUITests.swift; sourceTree = "<group>"; };
 		B9B9F42426E48A9B00D443F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9F69D4826F9D3BD000924D8 /* MarketInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketInformationView.swift; sourceTree = "<group>"; };
+		B9F69D4E26F9DDDC000924D8 /* MarketViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewModelTests.swift; sourceTree = "<group>"; };
+		D7613C1B479E7569124BB512 /* Pods-Cryptoneat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cryptoneat.release.xcconfig"; path = "Target Support Files/Pods-Cryptoneat/Pods-Cryptoneat.release.xcconfig"; sourceTree = "<group>"; };
+		D806FD51311D3AB2D7F4A182 /* Pods-Cryptoneat-CryptoneatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cryptoneat-CryptoneatUITests.release.xcconfig"; path = "Target Support Files/Pods-Cryptoneat-CryptoneatUITests/Pods-Cryptoneat-CryptoneatUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAE5019E35913BF107C139B1 /* Pods_Cryptoneat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1D76E22CB3CF0E391768C3 /* Pods_CryptoneatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +166,171 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F6B14EC0DD18403682CFC40 /* Pods_Cryptoneat_CryptoneatUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A88C68AAE9EBB99F2797D5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76625C8181C63173ADA7CA4A /* Pods_Cryptoneat.framework */,
+				9C0ED2B26678F0E6081EBAA3 /* Pods_Cryptoneat_CryptoneatUITests.framework */,
+				54C5309F686F49426A104527 /* Pods_CryptoneatTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5CB80A951BBD8D934B8F503E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4BA2D83F0BEE4D0F643D3C6A /* Pods-Cryptoneat.debug.xcconfig */,
+				D7613C1B479E7569124BB512 /* Pods-Cryptoneat.release.xcconfig */,
+				0CD3F1D4C5C47F20B744D96F /* Pods-Cryptoneat-CryptoneatUITests.debug.xcconfig */,
+				D806FD51311D3AB2D7F4A182 /* Pods-Cryptoneat-CryptoneatUITests.release.xcconfig */,
+				A9F69913FF2EB42D9AF1539B /* Pods-CryptoneatTests.debug.xcconfig */,
+				75606E66E76053C612607F0F /* Pods-CryptoneatTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B9064D9A270302AA000E3894 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B9064D9B270302BB000E3894 /* HomeViewController.swift */,
+				B9632E35270E9A4A00342460 /* GainersAndLosersView */,
+				B950401E270DA012000722FA /* TrendingView */,
+				B9504009270D8941000722FA /* BitcoinPriceView */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B910006A26E4982B00F63163 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B910006B26E4983500F63163 /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B910007026E4994500F63163 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B910007126E4994F00F63163 /* API */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B910007126E4994F00F63163 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B910007226E4996300F63163 /* APITests.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B910007A26E49B3F00F63163 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B910007B26E49B5F00F63163 /* MarketsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B910009226E4A31400F63163 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B910009326E4A32900F63163 /* JSONDecoder+Ext.swift */,
+				B910009B26E4A36400F63163 /* Formatter+Ext.swift */,
+				B91000A026E4A37B00F63163 /* JSONEncoder+Ext.swift */,
+				B91000A526E4A3CE00F63163 /* ISO8601DateFormatter+Ext.swift */,
+				B91000B326E4A3F400F63163 /* Date+Ext.swift */,
+				B91000B826E4A40200F63163 /* String+Ext.swift */,
+				B946F09326F3232700E5690F /* UIView+Ext.swift */,
+				B9504014270D90C0000722FA /* Double+Ext.swift */,
+				B9632E43270FFB4300342460 /* UITableView+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B91000BD26E4B7DF00F63163 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				B91000BE26E4B81200F63163 /* MarketCell.swift */,
+				B9632E4D2710018100342460 /* GainersLosersCell.swift */,
+				B9632E52271686A900342460 /* TrendingCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		B9504009270D8941000722FA /* BitcoinPriceView */ = {
+			isa = PBXGroup;
+			children = (
+				B950400A270D8971000722FA /* BitcoinPriceViewController.swift */,
+				B950400F270D89ED000722FA /* BitcoinPriceViewModel.swift */,
+			);
+			path = BitcoinPriceView;
+			sourceTree = "<group>";
+		};
+		B950401E270DA012000722FA /* TrendingView */ = {
+			isa = PBXGroup;
+			children = (
+				B950401F270DA036000722FA /* TrendingViewModel.swift */,
+				B9504024270DA044000722FA /* TrendingViewController.swift */,
+			);
+			path = TrendingView;
+			sourceTree = "<group>";
+		};
+		B9632E35270E9A4A00342460 /* GainersAndLosersView */ = {
+			isa = PBXGroup;
+			children = (
+				B9632E36270E9A6500342460 /* GainersAndLosersViewController.swift */,
+				B9632E3E270E9A7200342460 /* GainersAndLosersViewModel.swift */,
+			);
+			path = GainersAndLosersView;
+			sourceTree = "<group>";
+		};
+		B992301626E48B9D00F395E8 /* Markets */ = {
+			isa = PBXGroup;
+			children = (
+				B9F69D5926F9E2FF000924D8 /* Child Views */,
+				B992301826E48BB800F395E8 /* MarketListViewController.swift */,
+				B946F08926F315A000E5690F /* MarketViewController.swift */,
+			);
+			path = Markets;
+			sourceTree = "<group>";
+		};
+		B992301726E48BA100F395E8 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				B992302326E48BF900F395E8 /* FavoritesViewController.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		B992302826E4907800F395E8 /* StartUp */ = {
+			isa = PBXGroup;
+			children = (
+				B9B9F3FD26E48A9A00D443F4 /* AppDelegate.swift */,
+				B9B9F3FF26E48A9A00D443F4 /* SceneDelegate.swift */,
+				B9B9F40926E48A9B00D443F4 /* Assets.xcassets */,
+				B9B9F40B26E48A9B00D443F4 /* LaunchScreen.storyboard */,
+			);
+			path = StartUp;
+			sourceTree = "<group>";
+		};
+		B999711B26FD552F00F44A04 /* Reusable Views */ = {
+			isa = PBXGroup;
+			children = (
+				B999711C26FD554600F44A04 /* LoadingViewController.swift */,
+				B999712626FD875C00F44A04 /* LoadingView.swift */,
+				B9064D952701B38D000E3894 /* EmptyStateView.swift */,
+			);
+			path = "Reusable Views";
+			sourceTree = "<group>";
+		};
 		B9B9F3F126E48A9A00D443F4 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +338,8 @@
 				B9B9F41626E48A9B00D443F4 /* CryptoneatTests */,
 				B9B9F42126E48A9B00D443F4 /* CryptoneatUITests */,
 				B9B9F3FB26E48A9A00D443F4 /* Products */,
+				5CB80A951BBD8D934B8F503E /* Pods */,
+				3A88C68AAE9EBB99F2797D5A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,12 +356,11 @@
 		B9B9F3FC26E48A9A00D443F4 /* Cryptoneat */ = {
 			isa = PBXGroup;
 			children = (
-				B9B9F3FD26E48A9A00D443F4 /* AppDelegate.swift */,
-				B9B9F3FF26E48A9A00D443F4 /* SceneDelegate.swift */,
-				B9B9F40126E48A9A00D443F4 /* ViewController.swift */,
-				B9B9F40326E48A9A00D443F4 /* Main.storyboard */,
-				B9B9F40926E48A9B00D443F4 /* Assets.xcassets */,
-				B9B9F40B26E48A9B00D443F4 /* LaunchScreen.storyboard */,
+				B9B9F43D26E48AF300D443F4 /* Helpers */,
+				B9B9F43C26E48AEA00D443F4 /* Networking */,
+				B9B9F43B26E48AE200D443F4 /* ViewModel */,
+				B9B9F43A26E48ADC00D443F4 /* View */,
+				B9B9F43926E48AD300D443F4 /* Model */,
 				B9B9F40E26E48A9B00D443F4 /* Info.plist */,
 				B9B9F40626E48A9A00D443F4 /* Cryptoneat.xcdatamodeld */,
 			);
@@ -116,6 +370,8 @@
 		B9B9F41626E48A9B00D443F4 /* CryptoneatTests */ = {
 			isa = PBXGroup;
 			children = (
+				B9F69D4D26F9DDBB000924D8 /* ViewModel */,
+				B910007026E4994500F63163 /* Networking */,
 				B9B9F41726E48A9B00D443F4 /* CryptoneatTests.swift */,
 				B9B9F41926E48A9B00D443F4 /* Info.plist */,
 			);
@@ -131,6 +387,78 @@
 			path = CryptoneatUITests;
 			sourceTree = "<group>";
 		};
+		B9B9F43926E48AD300D443F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B946F07926F2E3E900E5690F /* Market.swift */,
+				B946F08E26F31B6B00E5690F /* Currency.swift */,
+				B946F09D26F8117900E5690F /* MarketChart.swift */,
+				B9504019270D97F4000722FA /* Trending.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B9B9F43A26E48ADC00D443F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B9064D9A270302AA000E3894 /* Home */,
+				B999711B26FD552F00F44A04 /* Reusable Views */,
+				B91000BD26E4B7DF00F63163 /* TableViewCells */,
+				B992301726E48BA100F395E8 /* Favorites */,
+				B992301626E48B9D00F395E8 /* Markets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9B9F43B26E48AE200D443F4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B946F07E26F2EF1300E5690F /* MarketViewModel.swift */,
+				B9064D902701AEC3000E3894 /* FavoritesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B9B9F43C26E48AEA00D443F4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B910007A26E49B3F00F63163 /* Services */,
+				B910006A26E4982B00F63163 /* API */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B9B9F43D26E48AF300D443F4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B910009226E4A31400F63163 /* Extensions */,
+				B992302826E4907800F395E8 /* StartUp */,
+				B992302926E490B400F395E8 /* Themes.swift */,
+				B992303126E491B000F395E8 /* Colors.swift */,
+				B999712126FD579B00F44A04 /* ViewState.swift */,
+				B9632E48271000E800342460 /* ContentSizedTableView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B9F69D4D26F9DDBB000924D8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B9F69D4E26F9DDDC000924D8 /* MarketViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B9F69D5926F9E2FF000924D8 /* Child Views */ = {
+			isa = PBXGroup;
+			children = (
+				B9F69D4826F9D3BD000924D8 /* MarketInformationView.swift */,
+				B904964726F81C9A00F7F8B1 /* MarketChartViewController.swift */,
+				B904964C26F9802B00F7F8B1 /* AllTimeView.swift */,
+			);
+			path = "Child Views";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +466,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9B9F42726E48A9B00D443F4 /* Build configuration list for PBXNativeTarget "Cryptoneat" */;
 			buildPhases = (
+				4B638ECD93C51C7A3B46050E /* [CP] Check Pods Manifest.lock */,
 				B9B9F3F626E48A9A00D443F4 /* Sources */,
 				B9B9F3F726E48A9A00D443F4 /* Frameworks */,
 				B9B9F3F826E48A9A00D443F4 /* Resources */,
+				95F273B0C5EC977E04B2840C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +485,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9B9F42A26E48A9B00D443F4 /* Build configuration list for PBXNativeTarget "CryptoneatTests" */;
 			buildPhases = (
+				C5F4177506D6A0177DD6DCB8 /* [CP] Check Pods Manifest.lock */,
 				B9B9F40F26E48A9B00D443F4 /* Sources */,
 				B9B9F41026E48A9B00D443F4 /* Frameworks */,
 				B9B9F41126E48A9B00D443F4 /* Resources */,
@@ -173,9 +504,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9B9F42D26E48A9B00D443F4 /* Build configuration list for PBXNativeTarget "CryptoneatUITests" */;
 			buildPhases = (
+				71AD99115EE0CD233286D094 /* [CP] Check Pods Manifest.lock */,
 				B9B9F41A26E48A9B00D443F4 /* Sources */,
 				B9B9F41B26E48A9B00D443F4 /* Frameworks */,
 				B9B9F41C26E48A9B00D443F4 /* Resources */,
+				CC15541EC1BACD3A3D4FEFFD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,7 +569,6 @@
 			files = (
 				B9B9F40D26E48A9B00D443F4 /* LaunchScreen.storyboard in Resources */,
 				B9B9F40A26E48A9B00D443F4 /* Assets.xcassets in Resources */,
-				B9B9F40526E48A9A00D443F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,15 +588,157 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4B638ECD93C51C7A3B46050E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cryptoneat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71AD99115EE0CD233286D094 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cryptoneat-CryptoneatUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95F273B0C5EC977E04B2840C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cryptoneat/Pods-Cryptoneat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cryptoneat/Pods-Cryptoneat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cryptoneat/Pods-Cryptoneat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5F4177506D6A0177DD6DCB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoneatTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC15541EC1BACD3A3D4FEFFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cryptoneat-CryptoneatUITests/Pods-Cryptoneat-CryptoneatUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cryptoneat-CryptoneatUITests/Pods-Cryptoneat-CryptoneatUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cryptoneat-CryptoneatUITests/Pods-Cryptoneat-CryptoneatUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B9B9F3F626E48A9A00D443F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9064D912701AEC3000E3894 /* FavoritesViewModel.swift in Sources */,
+				B946F09E26F8117900E5690F /* MarketChart.swift in Sources */,
+				B9064D9C270302BB000E3894 /* HomeViewController.swift in Sources */,
+				B91000B926E4A40200F63163 /* String+Ext.swift in Sources */,
+				B992301926E48BB800F395E8 /* MarketListViewController.swift in Sources */,
+				B91000A626E4A3CE00F63163 /* ISO8601DateFormatter+Ext.swift in Sources */,
+				B9504015270D90C0000722FA /* Double+Ext.swift in Sources */,
+				B91000B426E4A3F400F63163 /* Date+Ext.swift in Sources */,
+				B999712226FD579B00F44A04 /* ViewState.swift in Sources */,
+				B992302A26E490B400F395E8 /* Themes.swift in Sources */,
 				B9B9F40826E48A9A00D443F4 /* Cryptoneat.xcdatamodeld in Sources */,
-				B9B9F40226E48A9A00D443F4 /* ViewController.swift in Sources */,
+				B9504010270D89ED000722FA /* BitcoinPriceViewModel.swift in Sources */,
+				B9632E37270E9A6500342460 /* GainersAndLosersViewController.swift in Sources */,
+				B950400B270D8971000722FA /* BitcoinPriceViewController.swift in Sources */,
+				B9504020270DA036000722FA /* TrendingViewModel.swift in Sources */,
+				B91000BF26E4B81200F63163 /* MarketCell.swift in Sources */,
+				B946F08A26F315A000E5690F /* MarketViewController.swift in Sources */,
+				B992303226E491B000F395E8 /* Colors.swift in Sources */,
+				B9064D962701B38D000E3894 /* EmptyStateView.swift in Sources */,
+				B946F07F26F2EF1300E5690F /* MarketViewModel.swift in Sources */,
+				B999711D26FD554600F44A04 /* LoadingViewController.swift in Sources */,
+				B910007C26E49B5F00F63163 /* MarketsService.swift in Sources */,
+				B946F09426F3232700E5690F /* UIView+Ext.swift in Sources */,
+				B9632E4E2710018100342460 /* GainersLosersCell.swift in Sources */,
+				B910009426E4A32900F63163 /* JSONDecoder+Ext.swift in Sources */,
 				B9B9F3FE26E48A9A00D443F4 /* AppDelegate.swift in Sources */,
+				B992302426E48BF900F395E8 /* FavoritesViewController.swift in Sources */,
+				B910006C26E4983500F63163 /* API.swift in Sources */,
+				B904964D26F9802B00F7F8B1 /* AllTimeView.swift in Sources */,
+				B9504025270DA044000722FA /* TrendingViewController.swift in Sources */,
+				B91000A126E4A37B00F63163 /* JSONEncoder+Ext.swift in Sources */,
+				B946F08F26F31B6B00E5690F /* Currency.swift in Sources */,
+				B999712726FD875C00F44A04 /* LoadingView.swift in Sources */,
+				B910009C26E4A36400F63163 /* Formatter+Ext.swift in Sources */,
 				B9B9F40026E48A9A00D443F4 /* SceneDelegate.swift in Sources */,
+				B9632E49271000E800342460 /* ContentSizedTableView.swift in Sources */,
+				B9632E3F270E9A7200342460 /* GainersAndLosersViewModel.swift in Sources */,
+				B9F69D4926F9D3BD000924D8 /* MarketInformationView.swift in Sources */,
+				B9632E53271686A900342460 /* TrendingCell.swift in Sources */,
+				B950401A270D97F4000722FA /* Trending.swift in Sources */,
+				B9632E44270FFB4300342460 /* UITableView+Ext.swift in Sources */,
+				B946F07A26F2E3E900E5690F /* Market.swift in Sources */,
+				B904964826F81C9A00F7F8B1 /* MarketChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +746,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9F69D4F26F9DDDC000924D8 /* MarketViewModelTests.swift in Sources */,
+				B910007326E4996300F63163 /* APITests.swift in Sources */,
 				B9B9F41826E48A9B00D443F4 /* CryptoneatTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,14 +776,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B9B9F40326E48A9A00D443F4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B9B9F40426E48A9A00D443F4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B9B9F40B26E48A9B00D443F4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -437,6 +905,7 @@
 		};
 		B9B9F42826E48A9B00D443F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BA2D83F0BEE4D0F643D3C6A /* Pods-Cryptoneat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -456,6 +925,7 @@
 		};
 		B9B9F42926E48A9B00D443F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7613C1B479E7569124BB512 /* Pods-Cryptoneat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,6 +945,7 @@
 		};
 		B9B9F42B26E48A9B00D443F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9F69913FF2EB42D9AF1539B /* Pods-CryptoneatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +968,7 @@
 		};
 		B9B9F42C26E48A9B00D443F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75606E66E76053C612607F0F /* Pods-CryptoneatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +991,7 @@
 		};
 		B9B9F42E26E48A9B00D443F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CD3F1D4C5C47F20B744D96F /* Pods-Cryptoneat-CryptoneatUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +1012,7 @@
 		};
 		B9B9F42F26E48A9B00D443F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D806FD51311D3AB2D7F4A182 /* Pods-Cryptoneat-CryptoneatUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
