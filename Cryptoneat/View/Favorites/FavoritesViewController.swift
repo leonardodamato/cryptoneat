@@ -84,10 +84,12 @@ class FavoritesViewController: UIViewController {
     func getFavorites(completion: @escaping () -> ()) {
         let service = MarketsService()
         
-        service.getSomeMarkets(markets: viewModel.fetchFavorites()) { [weak self] (result) in
+        let favorites = viewModel.fetchFavorites()
+        
+        service.getSomeMarkets(markets: favorites) { [weak self] (result) in
             switch result {
             case .success(let markets):
-                self?.favorites = markets
+                if favorites.count > 0 { self?.favorites = markets }
             case .failure(let error):
                 //TODO: - Handle error
                 print(error.localizedDescription)
